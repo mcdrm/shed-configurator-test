@@ -1,0 +1,90 @@
+.building-controller {
+    
+    .bottom-section {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0);
+        z-index: 10;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 3px 15px 5px 12px;
+        margin: 0px 0px 10px 0px;
+        gap: 0px;
+        font-size: 12px;
+        color: #3C3C3C;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .select-item {
+            cursor: pointer;
+            display: flex;
+            flex-flow: column;
+            gap: 5px;
+            min-width: 65px;
+            align-items: center;
+
+            &.isSelected {
+                color: #0066FF;
+            }
+
+            &.isDisabled {
+                cursor: not-allowed;
+                opacity: 50%;
+            }
+        }
+
+        .dropdown-menu {
+            min-width: 70px;
+
+            .dropdown-item {
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+        
+        .vl {
+            border-left: 1px solid #7d7d7d;
+            height: 20px;
+            left: 50%;
+            margin-left: 5px;
+            margin-right: 6px;
+            top: 0;
+        }
+    }
+
+    .side-section {
+        position: absolute;
+        z-index: 10;
+        top: 30px;
+        right: 30px;
+        width: 250px;
+        height: 185px;
+        background-color: antiquewhite;
+        padding: 20px;
+
+        opacity: 80%;
+        border-radius: 3px 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .size-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+    }
+
+    .tweakpane-container {
+        position: absolute;
+        z-index: 10;
+        top: 30px;
+        right: 30px;
+        min-width: 250px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 6px;
+    }
+}
