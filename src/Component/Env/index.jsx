@@ -16,7 +16,7 @@ const Env = () => {
                 autoRotate={isCamAutoRotate}
                 rotateSpeed={0.6}
                 dampingFactor={0.2}
-                maxPolarAngle={Math.PI / 2}
+                maxPolarAngle={Math.PI / 2.2}
             />
             
             <ambientLight intensity={0.5} />
